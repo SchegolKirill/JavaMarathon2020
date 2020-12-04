@@ -7,12 +7,13 @@ import java.util.Random;
 
 public class Task4 {
     public static void main(String[] args) {
-        int[] arr3 = new int[100];
+        int[] arr3 = new int[100000];
         Random random3 = new Random();
         int sum3 = 0;
         int index = 0;
         int max = 0;
         int indexmax = 0;
+        int k = 50;
         for(int i = 0; i < arr3.length; i++) {
             arr3[i] = random3.nextInt(10000);
             //System.out.print(arr3[i] + " ");

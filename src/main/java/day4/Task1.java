@@ -26,7 +26,7 @@ public class Task1 {
             if (arr[i] % 2 == 0) {
                 sum3++;
             }
-            if (arr[i] % 2 != 0) {
+            else {
                 sum4++;
             }
             sum5 = sum5 + arr[i];
