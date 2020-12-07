@@ -1,4 +1,4 @@
-package day7;
+package day8;
 
 public class Airplane {
     private String producer;
@@ -6,6 +6,8 @@ public class Airplane {
     private int length;
     private int weight;
     private int fuel = 0;
+    private int forUp;
+
 
     public Airplane(String producer, int year, int length, int weight) {
         this.producer = producer;
@@ -25,24 +27,16 @@ public class Airplane {
     public void setYear(int year){
         this.year = year;
     }
-    public int getYear(){
+    int getYear(){
         return year;
     }
     public void setLength(int length){
         this.length = length;
     }
-    public int getLength(){
+    int getLength(){
         return length;
     }
-    public static void compareAirplanes(Airplane airplane1, Airplane airplane2) {
-        if(airplane1.length > airplane2.length) {
-            System.out.println("Первый самолет длиннее");
-        }
-        else if(airplane1.length == airplane2.length) {
-            System.out.println("Длины самолетов равны");
-        }
-        else {
-            System.out.println("Второй самолет длиннее");
-        }
+    public String toString() {
+        return "Изготовитель: " + producer + ", год выпуска: " + year + ", длина: " + length + ", вес: " + weight + ", количество топлива в баке: " + fuel;
     }
 }
