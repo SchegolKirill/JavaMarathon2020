@@ -18,7 +18,7 @@ public class TestFigures {
     public static double calculateRedPerimeter(Figure[] figures) {
         double sump = 0;
         for(int i = 0; i < figures.length; i++) {
-            if (figures[i].getColor() == "Red") {
+            if (figures[i].getColor().equals("Red")) {
                 sump = sump + figures[i].perimeter();
             }
         }
