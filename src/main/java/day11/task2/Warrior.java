@@ -17,6 +17,14 @@ public class Warrior extends Hero implements PhysAttack{
 
     @Override
     public void physicalAttack(Hero hero) {
-        hero.setHealth(hero.getHealth() - (physAtt - (physAtt * hero.getPhysDef())));
+        hero.setHealth(hero.getHealth() - (physAtt - ((physAtt * hero.getPhysDef()) / 100)));
+        if(hero.getHealth() <= 0) {
+            hero.setHealth(0);
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "HP = " + getHealth() + ", PhysDef = " + getPhysAtt() + ", MagicDef = " + getMagicDef() + ", PhysDamage = " + getPhysAtt();
     }
 }
