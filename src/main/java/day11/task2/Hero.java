@@ -1,41 +1,31 @@
 package day11.task2;
 
-import java.net.http.HttpRequest;
-
 public abstract class Hero {
-    private int health;
-    private int physDef;
-    private int magicDef;
+    private double health;
+    private double physDef;
+    private double magicDef;
 
-    public Hero() {
-        this.health = health;
-        this.physDef = physDef;
-        this.magicDef = magicDef;
-    }
-
-    public void setHealth(int health) {
+    public void setHealth(double health) {
         this.health = health;
     }
 
-    public int getHealth() {
+    public double getHealth() {
         return health;
     }
 
-    public void setPhysDef(int physDef) {
+    public void setPhysDef(double physDef) {
         this.physDef = physDef;
     }
 
-    public int getPhysDef() {
+    public double getPhysDef() {
         return physDef;
     }
 
-    public void setMagicDef(int magicDef) {
+    public void setMagicDef(double magicDef) {
         this.magicDef = magicDef;
     }
 
-    public int getMagicDef() {
+    public double getMagicDef() {
         return magicDef;
     }
 }
-
-

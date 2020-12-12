@@ -1,15 +1,17 @@
 package day11.task2;
 
-import java.lang.ref.PhantomReference;
-
 public class Warrior extends Hero implements PhysAttack{
-    private int physAtt;
+    private double physAtt;
 
     public Warrior() {
         setHealth(100);
         setPhysDef(80);
         setMagicDef(0);
         physAtt = 30;
+    }
+
+    public double getPhysAtt() {
+        return physAtt;
     }
 
 
