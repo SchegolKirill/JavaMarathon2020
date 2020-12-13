@@ -1,6 +1,4 @@
-package day12.task4;
-
-
+package day12.task5;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,16 +6,14 @@ import java.util.List;
 public class MusicBand {
     private String nameOfBand;
     private int year;
-    public List<String> listOfMembers = new ArrayList<>();
-    public String nameOfMember;
+    public List<MusicArtist> listOfMembers;
 
-    public MusicBand(String nameOfBand, int year, List<String > listOfMembers) {
+
+    public MusicBand(String nameOfBand, int year, List<MusicArtist > listOfMembers) {
         this.nameOfBand = nameOfBand;
         this.year = year;
         this.listOfMembers = listOfMembers;
     }
-
-
 
     public String getName() {
         return nameOfBand;
@@ -46,7 +42,7 @@ public class MusicBand {
         System.out.println(musicBand.listOfMembers);
     }
 
-    public List<String> getMembers() {
+    public List<MusicArtist> getMembers() {
          return listOfMembers;
     }
 }
