@@ -1,2 +1,38 @@
-package day13;public class Message {
+package day13;
+
+import java.util.Date;
+
+public class Message {
+    private User sender;
+    private User receiver;
+    private String text;
+    private Date date;
+
+    public Message(User sender, User receiver, String text) {
+        this.sender = sender;
+        this.receiver = receiver;
+        this.text = text;
+        this.date = new Date();
+    }
+
+    public User getSender() {
+        return sender;
+    }
+
+    public User getReceiver() {
+        return receiver;
+    }
+
+    public String getText() {
+        return text;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    @Override
+    public String toString() {
+        return "FROM: " + getSender().getUsername() + "\n TO: " + getReceiver().getUsername() + "\n ON: " + date + "\n" + text;
+    }
 }
